@@ -1,9 +1,9 @@
-import { MiniLogo } from '../assets/images/index';
-import { NotificationsIcon, MailIcon } from '../assets/icons/index';
+import { MiniLogo } from '@assets/images/index';
+import { NotificationsIcon, MailIcon } from '@assets/icons/index';
 import { Menu, X } from 'lucide-react';
-import { DashboardContextValues } from '../types';
+import { DashboardContextValues } from '@/types';
 import { useContext } from 'react';
-import { DashboardContext } from '../context/dashboard-context';
+import { DashboardContext } from '@/context/dashboard-context';
 
 function Header() {
   const { showSideBar, setShowSideBar } = useContext(
