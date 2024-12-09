@@ -8,7 +8,11 @@ module.exports = {
   ],
   theme: {
     extend: {
+      boxShadow: {
+        xsm: '0 1px 2px 0 rgba(16, 24, 40, 0.4)',
+      },
       colors: {
+        'ligth-grey': '#8F95B2',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

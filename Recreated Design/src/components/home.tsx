@@ -3,7 +3,7 @@ import Header from './header';
 function Home() {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <p>Home</p>
     </>
   );
