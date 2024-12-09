@@ -4,7 +4,7 @@ import { DashboardContextValues, DashboardProviderProps } from '../types/index';
 const DashboardContext = createContext<DashboardContextValues | null>(null);
 
 function DashboardProvider({ children }: DashboardProviderProps) {
-  const [showSideBar, setShowSideBar] = useState<boolean>(true);
+  const [showSideBar, setShowSideBar] = useState<boolean>(false);
 
   // Set context values
   const contextValues: DashboardContextValues = {

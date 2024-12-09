@@ -33,7 +33,7 @@ function Sidebar() {
           <img src={Logo} alt="logo" />
         </div>
 
-        <ul className="flex flex-col gap-y-2 font-bold text-ligth-grey">
+        <ul className="flex flex-col gap-y-2 font-bold text-light-grey">
           {sidebarLinks.map(({ id, icon, name, isActive }) => (
             <li
               className={`${
