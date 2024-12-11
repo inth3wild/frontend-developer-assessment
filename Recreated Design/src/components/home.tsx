@@ -1,46 +1,7 @@
-import {
-  ExportIcon,
-  EyeIcon,
-  SearchIcon,
-  TotalCustomerIcon,
-  TotalMenuIcon,
-  TotalOrdersIcon,
-  TotalRevenueIcon,
-  TrashIcon,
-} from '@/assets/icons';
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuLabel,
-  DropdownMenuSeparator,
-  DropdownMenuTrigger,
-} from '@/components/ui/dropdown-menu';
-
-import { Ellipsis } from 'lucide-react';
-
-const totals = [
-  {
-    icon: TotalMenuIcon,
-    name: 'Total Menu',
-    totalValue: '345',
-  },
-  {
-    icon: TotalRevenueIcon,
-    name: 'Total Revenue',
-    totalValue: '$37,193.00',
-  },
-  {
-    icon: TotalCustomerIcon,
-    name: 'Total Customer',
-    totalValue: '1349',
-  },
-  {
-    icon: TotalOrdersIcon,
-    name: 'Total Orders',
-    totalValue: '3,500',
-  },
-];
+import { SearchIcon } from '@/assets/icons';
+import { totals } from '@/constants/totals';
+import BarChartSection from '@/components/bar-chart-section';
+import PieChartSection from '@/components/pie-chart-section';
 
 function Home() {
   return (
@@ -57,8 +18,8 @@ function Home() {
       </section>
 
       <section>
-        {totals.map(({ icon, name, totalValue }) => (
-          <div>
+        {totals.map(({ icon, name, totalValue, id }) => (
+          <div key={id}>
             <img
               src={icon}
               alt={`${name.split(' ').join('-').toLowerCase()}-icon`}
@@ -69,35 +30,9 @@ function Home() {
         ))}
       </section>
 
-      <section>
-        <div>
-          <div>
-            <h1>Revenue</h1>
-            <DropdownMenu>
-              <DropdownMenuTrigger>
-                <Ellipsis color="#8F95B2" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem className="text-light-grey">
-                  <img src={EyeIcon} alt="eye-icon" />
-                  View
-                </DropdownMenuItem>
-                <DropdownMenuItem className="text-light-grey">
-                  <img src={ExportIcon} alt="export-icon" />
-                  Export
-                </DropdownMenuItem>
-                <DropdownMenuItem className="text-[#FF754C]">
-                  <img src={TrashIcon} alt="trash-icon" />
-                  Remove
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-          </div>
-          <div>
-            <p>$112,340</p>
-          </div>
-        </div>
-      </section>
+      <BarChartSection />
+
+      <PieChartSection />
     </>
   );
 }

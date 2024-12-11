@@ -25,6 +25,25 @@
     --destructive-foreground: 210 40% 98%;
     --ring: 215 20.2% 65.1%;
     --radius: 0.5rem;
+
+    /* Bar-chart bar colors */
+    --chart-1: #e6e8f0;
+    --chart-2: #e6e8f0;
+    --chart-3: #33c600;
+    --chart-4: #e6e8f0;
+    --chart-5: #e6e8f0;
+    --chart-6: #b8b7ff;
+    --chart-7: #e6e8f0;
+    --chart-8: #e6e8f0;
+    --chart-9: #e6e8f0;
+    --chart-10: #ff4ce2;
+    --chart-11: #e6e8f0;
+    --chart-12: #e6e8f0;
+
+    /* Pie chart colors */
+    --pie-chart-1: #ffb7f5;
+    --pie-chart-2: #9ec600;
+    --pie-chart-3: #e6e8f0;
   }
 
   .dark {

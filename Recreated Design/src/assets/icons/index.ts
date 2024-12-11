@@ -1,6 +1,7 @@
 import ActionIcon from './action-icon.svg';
 import AnalyticsIcon from './analytics-icon.svg';
 import CustomerIcon from './customer-icon.svg';
+import DailyChartIcon from './daily-chart-icon.svg';
 import DashboardIcon from './dashboard-icon.svg';
 import ExportIcon from './export-icon.svg';
 import EyeIcon from './eye-icon.svg';
@@ -14,11 +15,13 @@ import TotalMenuIcon from './total-menu-icon.svg';
 import TotalOrdersIcon from './total-orders-icon.svg';
 import TotalRevenueIcon from './total-revenue-icon.svg';
 import TrashIcon from './trash-icon.svg';
+import WeeklyChartIcon from './weekly-chart-icon.svg';
 
 export {
   ActionIcon,
   AnalyticsIcon,
   CustomerIcon,
+  DailyChartIcon,
   DashboardIcon,
   ExportIcon,
   EyeIcon,
@@ -32,4 +35,5 @@ export {
   TotalOrdersIcon,
   TotalRevenueIcon,
   TrashIcon,
+  WeeklyChartIcon,
 };
