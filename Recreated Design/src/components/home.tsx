@@ -2,6 +2,8 @@ import { SearchIcon } from '@/assets/icons';
 import { totals } from '@/constants/totals';
 import BarChartSection from '@/components/bar-chart-section';
 import PieChartSection from '@/components/pie-chart-section';
+// import MapComponent from '@/components/map';
+import CustomersList from './customers-list';
 
 function Home() {
   return (
@@ -33,6 +35,9 @@ function Home() {
       <BarChartSection />
 
       <PieChartSection />
+
+      {/* <MapComponent /> */}
+      <CustomersList />
     </>
   );
 }

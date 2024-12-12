@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'logo-icon': "url('/src/assets/icons/logo-icon.svg')",
+      },
       boxShadow: {
         xsm: '0 1px 2px 0 rgba(16, 24, 40, 0.4)',
         pieShadow: '0px 8.54px 22.78px 0px rgba(108, 93, 211, 0.1)',
