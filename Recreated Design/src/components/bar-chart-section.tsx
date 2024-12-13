@@ -14,13 +14,13 @@ import { barchartConfig, barchartData } from '@/constants/chart-data';
 const ChartLegendContent = () => {
   const legendKeys = ['pending', 'income', 'expance'];
   return (
-    <div className="flex justify-between mt-2">
+    <div className="flex justify-between mt-2 gap-3 md:w-1/2">
       {Object.entries(barchartConfig).map(([key, { label, color }]) => {
         if (legendKeys.includes(key)) {
           return (
             <div key={key} className="flex items-center gap-2">
               <div
-                className="w-3 h-3 rounded-sm"
+                className="min-w-3 min-h-3 rounded-sm"
                 style={{ backgroundColor: color }}
               ></div>
               <span className="text-xs text-light-grey">{label}</span>
@@ -34,10 +34,10 @@ const ChartLegendContent = () => {
 
 function BarChartSection() {
   return (
-    <section>
-      <div>
-        <div>
-          <h1>Revenue</h1>
+    <section className="bg-white rounded-xl shadow-lg">
+      <div className="space-y-4">
+        <div className="flex items-center justify-between border-b border-[#E6E8F0] pb-4 md:pb-10 p-8">
+          <h1 className="text-xl font-semibold">Revenue</h1>
           <DropdownMenu>
             <DropdownMenuTrigger>
               <Ellipsis color="#8F95B2" />
@@ -58,8 +58,9 @@ function BarChartSection() {
             </DropdownMenuContent>
           </DropdownMenu>
         </div>
-        <div>
-          <p>$112,340</p>
+        <div className="space-y-1 md:space-y-2 p-6">
+          <p className="text-3xl font-bold">${'112,340'}</p>
+          {/* Chart component will go here */}
           <ChartContainer
             config={barchartConfig}
             className="min-h-[200px] w-full"

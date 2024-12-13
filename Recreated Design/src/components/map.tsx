@@ -1,7 +1,7 @@
-import { markerData } from '@/constants/map-data';
+// import { markerData } from '@/constants/map-data';
 // import { MapMarker, MarkerPopup } from '@/components/map-marker';
 import Map, { Marker } from 'react-map-gl';
-import { CustomerIcon } from '@assets/icons/index';
+// import { CustomerIcon } from '@assets/icons/index';
 
 function MapComponent() {
   return (
@@ -24,7 +24,7 @@ function MapComponent() {
             bearing: 0,
           }}
         >
-          {markerData.map((marker) => (
+          {/* {markerData.map((marker) => (
             <Marker
               key={marker.id}
               longitude={marker.coordinates[0]}
@@ -33,7 +33,7 @@ function MapComponent() {
             >
               <img src={CustomerIcon} alt="" />
             </Marker>
-          ))}
+          ))} */}
         </Map>
       </div>
     </div>
