@@ -13,6 +13,7 @@ import FoodItemFive from './food-item-5.png';
 import FoodItemSix from './food-item-6.png';
 import Logo from './logo.png';
 import MiniLogo from './mini-logo.png';
+import ProfileAvatar from './profile-avatar.png';
 
 export {
   CustomerFive,
@@ -30,4 +31,5 @@ export {
   FoodItemTwo,
   Logo,
   MiniLogo,
+  ProfileAvatar,
 };

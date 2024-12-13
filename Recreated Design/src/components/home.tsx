@@ -9,8 +9,8 @@ import { Input } from '@/components/ui/input';
 
 function Home() {
   return (
-    <div className="py-2 px-4">
-      <section className="mt-2">
+    <div className="py-2 px-4 bg-gray-50">
+      <section className="mt-2 md:hidden">
         <div>
           <h1 className="font-bold">Hi, Taylor!</h1>
           <p className="text-light-grey">Let's check your store today</p>
