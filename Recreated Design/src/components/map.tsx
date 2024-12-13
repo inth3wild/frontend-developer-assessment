@@ -5,10 +5,12 @@ import Map, { Marker } from 'react-map-gl';
 
 function MapComponent() {
   return (
-    <div>
-      <h1>Customer Map</h1>
+    <div className="bg-white rounded-xl shadow-lg">
+      <h1 className="text-xl font-semibold mb-4 border-b border-[#E6E8F0] p-5 pb-4">
+        Customer Map
+      </h1>
 
-      <div className="h-80 relative">
+      <div className="h-96 w-full rounded-lg overflow-hidden p-5">
         <Map
           mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
           mapStyle="mapbox://styles/mapbox/light-v10"
@@ -25,15 +27,15 @@ function MapComponent() {
           }}
         >
           {/* {markerData.map((marker) => (
-            <Marker
-              key={marker.id}
-              longitude={marker.coordinates[0]}
-              latitude={marker.coordinates[1]}
-              className="absolute"
-            >
-              <img src={CustomerIcon} alt="" />
-            </Marker>
-          ))} */}
+          <Marker
+            key={marker.id}
+            longitude={marker.coordinates[0]}
+            latitude={marker.coordinates[1]}
+            className="absolute"
+          >
+            <img src={CustomerIcon} alt="" />
+          </Marker>
+        ))} */}
         </Map>
       </div>
     </div>

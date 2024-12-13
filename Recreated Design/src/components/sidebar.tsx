@@ -22,7 +22,7 @@ const sidebarLinks = [
 function Sidebar() {
   return (
     <motion.div
-      className="absolute left-0 p-3 w-full bg-white"
+      className="absolute left-0 w-full bg-white py-2 px-4"
       initial={{ x: '-100%' }}
       animate={{ x: 0 }}
       exit={{ x: '-100%' }}

@@ -12,9 +12,9 @@ function FoodMenu() {
   const [selectedCategory, setSelectedCategory] = useState('All Category');
 
   return (
-    <div className="container mx-auto px-4 py-8">
+    <div className="container mx-auto px-3 py-8">
       <div className="mb-8">
-        <h1 className="text-2xl font-bold mb-6">Menu</h1>
+        <h1 className="text-xl font-semibold mb-6">Menu</h1>
 
         {/* Mobile Category Selector */}
         <div className="md:hidden">
@@ -39,7 +39,7 @@ function FoodMenu() {
               key={category}
               className={`pb-4 px-2 ${
                 selectedCategory === category
-                  ? 'border-b-2 border-primary text-primary'
+                  ? 'border-b-2 border-[#6C5DD3] text-[#6C5DD3]'
                   : 'text-gray-600 hover:text-primary'
               }`}
             >

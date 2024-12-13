@@ -11,7 +11,7 @@ function App() {
   ) as DashboardContextValues;
 
   return (
-    <div className="h-screen py-2 px-4 relative">
+    <div className="h-screen relative">
       <div>
         <Header />
         {!showSideBar && <Home />}

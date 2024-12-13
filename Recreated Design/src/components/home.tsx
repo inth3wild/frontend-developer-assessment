@@ -9,7 +9,7 @@ import { Input } from '@/components/ui/input';
 
 function Home() {
   return (
-    <>
+    <div className="py-2 px-4">
       <section className="mt-2">
         <div>
           <h1 className="font-bold">Hi, Taylor!</h1>
@@ -50,12 +50,17 @@ function Home() {
         <PieChartSection />
       </div>
 
-      <MapComponent />
-
-      <CustomersList />
+      <div className="flex flex-col lg:flex-row gap-6 mt-10">
+        <div className="w-full lg:w-[70%]">
+          <MapComponent />
+        </div>
+        <div className="w-full lg:w-[30%]">
+          <CustomersList />
+        </div>
+      </div>
 
       <FoodMenu />
-    </>
+    </div>
   );
 }
 

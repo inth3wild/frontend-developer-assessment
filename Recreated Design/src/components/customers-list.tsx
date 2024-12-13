@@ -45,19 +45,23 @@ const customers = [
 
 function CustomersList() {
   return (
-    <div>
-      <h1>Customers List</h1>
+    <div className="bg-white p-6 rounded-xl shadow-lg">
+      <h1 className="text-xl font-semibold mb-4">Customers List</h1>
 
-      <ul>
+      <ul className="space-y-4 overflow-y-auto max-h-[calc(100%-3rem)]">
         {customers.map(({ id, name, email, avatar }) => {
           return (
-            <li key={id}>
-              <div>
-                <img src={avatar} alt={`customer-${id}`} />
+            <li key={id} className="flex items-center gap-3">
+              <div className="shrink-0">
+                <img
+                  src={avatar}
+                  alt={`customer-${id}`}
+                  className="w-10 h-10 rounded-full object-cover"
+                />
               </div>
-              <div>
-                <h2>{name}</h2>
-                <p>{email}</p>
+              <div className="min-w-0">
+                <h2 className="text-sm font-medium truncate">{name}</h2>
+                <p className="text-sm text-gray-500 truncate">{email}</p>
               </div>
             </li>
           );

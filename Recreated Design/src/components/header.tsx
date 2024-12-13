@@ -15,7 +15,7 @@ function Header() {
   }
 
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center border-b border-[#E6E8F0] pb-3 py-2 px-4 shadow-sm rounded-md">
       <div>
         <img src={MiniLogo} alt="logo" width={37} height={37} />
       </div>
