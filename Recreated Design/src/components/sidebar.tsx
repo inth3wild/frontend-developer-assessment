@@ -39,6 +39,7 @@ function Sidebar() {
               className={`${
                 isActive ? 'text-white bg-[#6C5DD3] rounded-xl' : ''
               } p-3`}
+              key={id}
             >
               <Link
                 className="flex gap-x-4 [&>img:nth-child(3)]:hover:inline"

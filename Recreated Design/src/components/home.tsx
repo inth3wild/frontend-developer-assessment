@@ -3,7 +3,8 @@ import { totals } from '@/constants/totals';
 import BarChartSection from '@/components/bar-chart-section';
 import PieChartSection from '@/components/pie-chart-section';
 // import MapComponent from '@/components/map';
-import CustomersList from './customers-list';
+import CustomersList from '@/components/customers-list';
+import FoodMenu from '@/components/food-menu';
 
 function Home() {
   return (
@@ -38,6 +39,8 @@ function Home() {
 
       {/* <MapComponent /> */}
       <CustomersList />
+
+      <FoodMenu />
     </>
   );
 }
