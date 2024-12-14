@@ -1,6 +1,6 @@
 **Recreated Design**
 
-This is a fully responsive recreation of the figma design using React, Tailwind CSS, and Mapbox GL.
+This is a fully responsive implementation of the figma design using React, Tailwind CSS, and Mapbox GL.
 
 <img src="./src/assets/images/figma-design.jpg" alt="Figma Design Screenshot" >
 
