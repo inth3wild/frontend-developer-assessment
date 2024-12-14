@@ -16,7 +16,7 @@ function Header() {
   }
 
   return (
-    <div className="flex justify-between items-center border-b border-[#E6E8F0] pb-3 py-2 px-4 shadow-sm rounded-md">
+    <div className="flex justify-between items-center border-b border-[#E6E8F0] pb-3 py-2 px-4 shadow-sm rounded-md md:rounded-none">
       <div className="md:hidden">
         <img src={MiniLogo} alt="logo" width={37} height={37} />
       </div>
@@ -37,7 +37,7 @@ function Header() {
         <img src={MailIcon} alt="" />
         <img src={NotificationsIcon} alt="" />
 
-        <div className="md:hidden">
+        <div className="lg:hidden">
           {showSideBar ? (
             <X width={29} height={29} onClick={handleMenuClick} />
           ) : (

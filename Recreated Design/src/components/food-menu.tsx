@@ -12,7 +12,7 @@ function FoodMenu() {
   const [selectedCategory, setSelectedCategory] = useState('All Category');
 
   return (
-    <div className="container mx-auto px-3 py-8">
+    <div className="mx-auto px-3 py-8">
       <div className="mb-8">
         <h1 className="text-xl font-semibold mb-6">Menu</h1>
 
