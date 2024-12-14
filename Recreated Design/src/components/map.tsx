@@ -43,3 +43,67 @@ function MapComponent() {
 }
 
 export default MapComponent;
+
+// Fix:-------------
+
+// import { useState } from 'react';
+// import Map, { Marker } from 'react-map-gl';
+// import { markerData } from '@/constants/map-data';
+// import { MapMarker, MarkerPopup } from '@/components/map-marker';
+
+// function MapComponent() {
+//   const [hoveredMarkerId, setHoveredMarkerId] = useState<number | null>(null);
+
+//   return (
+//     <div className="rounded-xl bg-white shadow-lg">
+//       <h1 className="border-b border-[#E6E8F0] p-5 pb-4 text-xl font-semibold">
+//         Customer Map
+//       </h1>
+
+//       <div className="h-96 w-full overflow-hidden p-5">
+//         <Map
+//           mapboxAccessToken={import.meta.env.VITE_MAPBOX_ACCESS_TOKEN}
+//           mapStyle="mapbox://styles/mapbox/light-v10"
+//           initialViewState={{
+//             longitude: -122.24704,
+//             latitude: 38.01155,
+//             zoom: 9.3,
+//             bounds: [
+//               [-122.97733, 37.76095],
+//               [-121.51674, 38.26129],
+//             ],
+//             pitch: 0,
+//             bearing: 0,
+//           }}
+//         >
+//           {markerData.map((marker) => (
+//             <div key={marker.id} className='w-full h-full'>
+//               <Marker
+//                 longitude={marker.coordinates[0]}
+//                 latitude={marker.coordinates[1]}
+//                 anchor="center"
+//               >
+//                 <div
+//                   onMouseEnter={() => setHoveredMarkerId(marker.id)}
+//                   onMouseLeave={() => setHoveredMarkerId(null)}
+//                 >
+//                   <MapMarker />
+//                 </div>
+//               </Marker>
+//               {hoveredMarkerId === marker.id && (
+//                 <MarkerPopup
+//                   label={marker.label}
+//                   hoverInfo={marker.hoverInfo}
+//                   longitude={marker.coordinates[0]}
+//                   latitude={marker.coordinates[1]}
+//                 />
+//               )}
+//             </div>
+//           ))}
+//         </Map>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default MapComponent;
