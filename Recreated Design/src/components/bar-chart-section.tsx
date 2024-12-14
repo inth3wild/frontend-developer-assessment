@@ -6,7 +6,12 @@ import {
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
 import { Bar, BarChart, XAxis } from 'recharts';
-import { ChartContainer, ChartLegend } from '@/components/ui/chart';
+import {
+  ChartContainer,
+  ChartLegend,
+  ChartTooltip,
+  ChartTooltipContent,
+} from '@/components/ui/chart';
 
 import { Ellipsis } from 'lucide-react';
 import { barchartConfig, barchartData } from '@/constants/chart-data';
@@ -14,7 +19,7 @@ import { barchartConfig, barchartData } from '@/constants/chart-data';
 const ChartLegendContent = () => {
   const legendKeys = ['pending', 'income', 'expance'];
   return (
-    <div className="flex justify-between mt-2 gap-3 md:w-1/2">
+    <div className="flex mt-2 gap-4">
       {Object.entries(barchartConfig).map(([key, { label, color }]) => {
         if (legendKeys.includes(key)) {
           return (
@@ -73,8 +78,12 @@ function BarChartSection() {
                 axisLine={false}
                 tickFormatter={(value) => value.slice(0, 3)}
               />
+              <ChartTooltip
+                cursor={false}
+                content={<ChartTooltipContent hideLabel />}
+              />
               <ChartLegend content={<ChartLegendContent />} />
-              <Bar dataKey="revenue" radius={8} />
+              <Bar dataKey="revenue" radius={5} />
             </BarChart>
           </ChartContainer>
         </div>

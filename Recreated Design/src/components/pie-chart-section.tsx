@@ -3,7 +3,7 @@ import {
   DropdownMenuTrigger,
   DropdownMenuContent,
   DropdownMenuItem,
-} from '@radix-ui/react-dropdown-menu';
+} from '@/components/ui/dropdown-menu';
 import {
   ExportIcon,
   EyeIcon,
@@ -58,9 +58,9 @@ const PieChartSection = () => {
           {/* Charts would go here */}
           <ChartContainer
             config={piechartConfig}
-            className="mx-auto aspect-square max-h-[250px] md:w-1/2"
+            className="w-full mx-auto aspect-square max-h-[250px] md:w-1/2 max-w-[250px]"
           >
-            <PieChart className="rounded-full shadow-pieShadow bg-yellow-400">
+            <PieChart className="">
               <ChartTooltip
                 cursor={false}
                 content={<ChartTooltipContent hideLabel />}
