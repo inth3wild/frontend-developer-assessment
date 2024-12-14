@@ -1,6 +1,7 @@
 // import { markerData } from '@/constants/map-data';
 // import { MapMarker, MarkerPopup } from '@/components/map-marker';
-import Map, { Marker } from 'react-map-gl';
+// import Map, { Marker } from 'react-map-gl';
+import Map from 'react-map-gl';
 // import { CustomerIcon } from '@assets/icons/index';
 
 function MapComponent() {
